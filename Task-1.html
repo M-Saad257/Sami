@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Personal Profile</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:20px;
+
+    /* Dark masculine gradient */
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+}
+
+.card{
+    width:100%;
+    max-width:380px;
+    padding:35px;
+    border-radius:18px;
+
+    background: rgba(20,20,20,0.85);
+    border:1px solid rgba(255,255,255,0.1);
+
+    box-shadow: 0 15px 40px rgba(0,0,0,0.6);
+    text-align:center;
+    color:#ffffff;
+
+    transition:0.4s;
+}
+
+.card:hover{
+    transform: translateY(-12px);
+    box-shadow: 0 25px 60px rgba(0,0,0,0.8);
+}
+
+.profile-img{
+    width:130px;
+    height:130px;
+    border-radius:50%;
+    object-fit:cover;
+    margin-bottom:18px;
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+
+    border:3px solid #00c6ff;
+    box-shadow:0 0 25px rgba(0,198,255,0.7);
+
+    transition:0.4s;
+}
+
+.profile-img:hover{
+    transform:scale(1.08);
+}
+
+h2{
+    margin-bottom:18px;
+    letter-spacing:1px;
+    font-weight:600;
+}
+
+.info{
+    text-align:left;
+}
+
+.info p{
+    margin:10px 0;
+    padding:12px;
+    border-radius:8px;
+    background: rgba(255,255,255,0.05);
+    border-left:3px solid #00c6ff;
+    transition:0.3s;
+}
+
+.info p:hover{
+    background: rgba(0,198,255,0.15);
+    transform:translateX(6px);
+}
+
+/* Responsive */
+@media(max-width:400px){
+    .card{
+        padding:25px;
+    }
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="card">
+
+    <img src="myphoto.png" class="profile-img" alt="Profile">
+
+    <h2>My Personal Profile</h2>
+
+    <div class="info">
+        <p><strong>Reg#:</strong> 5057</p>
+        <p><strong>Name:</strong> Samiullah</p>
+        <p><strong>Mob#:</strong> 0337-7005333</p>
+        <p><strong>CGPA:</strong> 3.75</p>
+    </div>
+
+</div>
+
+</body>
+</html>
